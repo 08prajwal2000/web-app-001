@@ -1,7 +1,7 @@
 import { writeFileSync, mkdirSync, existsSync } from "fs";
 
 if (!existsSync("./build")) mkdirSync("./build")
-
+console.log("working on index.html");
 writeFileSync("./build/index.html", `
   <html>
     <head>
@@ -16,6 +16,7 @@ writeFileSync("./build/index.html", `
 `, {
   flag: "a"
 });
+console.log("working on style.css");
 writeFileSync("./build/style.css", `
 body {
   background-color: green;
